@@ -26,7 +26,7 @@
 ## How to run locally
 1. Prerequisites
    - Docker and docker-compose installed
-   - (Optional) Java/Maven to run services locally without containers
+   - (Optional) Java to run services locally without containers
 
 2. Start everything (single command)
    - PowerShell:
