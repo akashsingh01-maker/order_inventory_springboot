@@ -6,7 +6,7 @@
 - Observability: Spring Cloud Sleuth + Zipkin for distributed tracing and Micrometer for metrics (Prometheus friendly).
 
 ## Design decisions
-- Java 8 compatibility for current environment; Maven multi-module-like layout with each service owning its own pom and Dockerfile.
+- Java 17 compatibility for current environment; Maven multi-module-like layout with each service owning its own pom and Dockerfile.
 - Idempotency: Idempotency-Key supported for POST operations. Example implementation uses an in-memory store (demo); production should use Redis or a DB table with a unique constraint.
 - Error model: consistent JSON error structure ({ code, message, details, requestId, timestamp }). Controllers add requestId via `X-Request-ID` header and MDC for structured logs.
 - One-command run: docker-compose builds and starts all services (Eureka, API Gateway, Order, Inventory, Postgres, Zipkin). Use `docker-compose up --build`.
