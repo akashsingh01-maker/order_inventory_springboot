@@ -1,0 +1,12 @@
+com\example\orderservice\dto\OrderItem.class
+com\example\orderservice\OrderServiceApplication.class
+com\example\orderservice\persistence\OrderEntity.class
+com\example\orderservice\persistence\OrderRepository.class
+com\example\orderservice\service\OrderServiceImpl.class
+com\example\orderservice\controller\OrderController.class
+com\example\orderservice\model\Order.class
+com\example\orderservice\service\IdempotencyService.class
+com\example\orderservice\service\InMemoryIdempotencyService.class
+com\example\orderservice\dto\CreateOrderRequest.class
+com\example\orderservice\persistence\OrderItemEntity.class
+com\example\orderservice\service\OrderService.class

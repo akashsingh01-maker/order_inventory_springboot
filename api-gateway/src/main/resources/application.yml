@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+
+  sleuth:
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    base-url: http://zipkin:9411/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials,RETAIN_FIRST
+
+# simple security: token must be 'testtoken' as Bearer

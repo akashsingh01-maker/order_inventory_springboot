@@ -1,0 +1,32 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: inventory-service
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/inventorydb}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+spring:
+  cloud:
+    sleuth:
+      sampler:
+        probability: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

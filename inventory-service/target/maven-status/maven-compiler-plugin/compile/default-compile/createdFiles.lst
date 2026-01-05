@@ -1,0 +1,10 @@
+com\example\inventoryservice\model\Product.class
+com\example\inventoryservice\service\InventoryService.class
+com\example\inventoryservice\persistence\ProductRepository.class
+com\example\inventoryservice\service\InventoryReservationService.class
+com\example\inventoryservice\InventoryServiceApplication.class
+com\example\inventoryservice\repository\ProductRepository.class
+com\example\inventoryservice\dto\ReservationItem.class
+com\example\inventoryservice\persistence\ProductEntity.class
+com\example\inventoryservice\controller\InventoryController.class
+com\example\inventoryservice\dto\InventoryDto.class

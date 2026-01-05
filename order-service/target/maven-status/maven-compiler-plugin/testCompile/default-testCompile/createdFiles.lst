@@ -1,0 +1,3 @@
+com\example\orderservice\ConcurrencyReservationTest.class
+com\example\orderservice\service\OrderServiceUnitTest.class
+com\example\orderservice\integration\OrderConfirmIntegrationTest.class
